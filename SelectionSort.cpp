@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// 배열 A의 인덱스 0부터 인덱스 last-1까지의 슬라이싱에서 
+// max 값을 가지는 원소의 인덱스를 찾아 반환하는 함수
 int find_max_idx(int* A, int last) {
     int idx = 0;
     int max = 0;
@@ -13,6 +15,9 @@ int find_max_idx(int* A, int last) {
     return idx;
 }
 
+// 배열 A의 크기가 N이고 선택 정렬에 의한 교환 횟수가 K일 때,
+// K번째에 교환되는 두 개의 수를 출력하는 함수.
+// 교환 횟수가 K보다 작으면 -1을 출력. 
 void selection_sort(int* A, int N, int K) {
 
     int change = 0;
